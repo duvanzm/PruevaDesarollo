@@ -1,0 +1,26 @@
+@media (max-width: 480px) {
+  .nav .menu-list {
+    display: none;
+  }
+  .nav .menu-user {
+    display: none;
+  }
+  .footer .col2,
+  .footer .col3,
+  .footer .col4 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav .menu-list {
+    display: none;
+  }
+  .footer .col2,
+  .footer .col3 {
+    display: none;
+  }
+}
+
+@media (max-width: 1024pxpx) {
+}

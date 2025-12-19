@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilos fijos  */
+
+.text-green {
+  color: #5edd5e;
+}
+.btn {
+  background-color: #5edd5e;
+  color: #fdfdfd;
+  font-weight: bolder;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar */
+.nav {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: 30px auto auto auto 30px;
+  /* background-color: aqua; */
+  height: 8vh;
+  gap: 20px;
+}
+
+.nav .menu-list a,
+.nav .menu-user a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav .logo {
+  grid-column: 2;
+}
+.nav .menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  grid-column: 3;
+}
+
+.nav .menu-user {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+  grid-column: 4;
+}
+
+.nav .menu-user .sign-up {
+  background-color: #5edd5e;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.nav .menu-user .sign-up a {
+  color: #f5f5f5;
+}
+.nav .menu-user .login a {
+  color: #5edd5e;
+}
+
+/* Mian */
+
+.main {
+  display: grid;
+  grid-template-rows: repeat(9, auto);
+}
+
+/* Hero */
+.main .hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  gap: 30px;
+  padding: 10px;
+  width: auto;
+  height: 60vh;
+  background-color: #f5f7fa;
+}
+
+.hero .hero-top {
+  width: auto;
+}
+.hero .hero-down {
+  width: auto;
+}
+
+/* sect1 */
+
+.main .sect1 {
+  grid-row: 2;
+  grid-column: 1 span 12;
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+.sect1 .top {
+  display: flex;
+  padding: 20px;
+}
+.sect1-down {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 120px;
+  list-style: none;
+  padding: 20px;
+}
+
+/* sect2 */
+.main .sect2 {
+  grid-row: 3;
+  padding: 20px;
+}
+
+.sect2-top {
+  text-align: center;
+}
+.sect2-down {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+/* sect3 */
+.main .sect3 {
+  grid-row: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/* sect4 */
+
+.main .sect4 {
+  grid-row: 5;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 20px;
+  background-color: #f5f7fa;
+}
+.sect4 .sect4-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sect4 .sect4-right {
+  display: grid;
+  align-content: flex-start;
+  grid-template-areas:
+    "a b"
+    "c d";
+  gap: 30px;
+}
+.sect4-right .right-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.sect4-right .right-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.sect4-right .right-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.sect4-right .right-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* sect5 */
+.main .sect5 {
+  grid-row: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/* sect6 */
+.main .sect6 {
+  grid-row: 7;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+  background-color: #f5f7fa;
+}
+
+.sect6 .sect6-top {
+  display: grid;
+  justify-content: start;
+}
+.sect6 .sect6-down {
+  display: flex;
+  gap: 120px;
+  list-style: none;
+}
+
+/* sect7 */
+
+.main .sect7 {
+  grid-row: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+.sect7 .sect7-top {
+  text-align: center;
+}
+.sect7 .sect7-down {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, auto);
+  padding: 30px;
+}
+/* sect8 */
+.sect8 {
+  grid-row: 9;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7fa;
+}
+
+.sect8 .sect8-center {
+  text-align: center;
+}
+/* sect9 */
+
+/* Footer */
+
+.footer {
+  display: grid;
+  justify-content: space-between;
+  align-items: start;
+  grid-template-columns: 15px auto auto auto auto 15px;
+  background-color: #263238;
+  color: #f5f5f5;
+  padding: 40px;
+  width: 100%;
+}
+.footer .list {
+  list-style: none;
+}
+.footer .list a {
+  text-decoration: none;
+  color: #f5f7fa;
+}
+.footer .col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-column: 2;
+}
+
+.footer .col2 {
+  grid-column: 3;
+  list-style: none;
+}
+
+.footer .col3 {
+  grid-column: 4;
+}
+
+.footer .col4 {
+  grid-column: 5;
+}
