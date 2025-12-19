@@ -6,7 +6,7 @@
 Instrucciones para clonar y visualizar el proyecto:
 
 
-- Clona o descarga este repositorio https://github.com/Julian-1412/html-css
+- Clona o descarga este repositorio https://github.com/duvanzm/PruevaDesarollo
 - Abra la carpeta "prueba de rendimiento html-css"
 - Abra el archivo index.html en su navegador
 - No se requieren dependencias ni configuraciones adicionales
